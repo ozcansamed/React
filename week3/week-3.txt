@@ -1,0 +1,2 @@
+HACKYOURWEATHER => PROJECT REPO => https://github.com/ozcansamed/React-HackYourWeather/tree/week3-hyw
+HACKYOURWEATHER => PROJECT NETLIFY => https://elastic-bassi-7d8c19.netlify.com/
