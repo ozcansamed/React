@@ -33,7 +33,7 @@ export default function DogGallery() {
   if (getDogPhoto) {
     return (
       <div className='dogPhotos'>
-        <Button onClick={getDogPhoto} />
+        <Button getDog={getDogPhoto} />
         <h6 style={{ marginBottom: "10px" }}>
           Get your first dog by clicking the button!
         </h6>

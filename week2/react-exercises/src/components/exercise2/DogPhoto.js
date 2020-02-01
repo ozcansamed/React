@@ -4,8 +4,8 @@ export default function DogPhoto({ dogPhotos }) {
   return (
     <div>
       <ul>
-        {dogPhotos.map(img => (
-          <li>
+        {dogPhotos.map((img, i) => (
+          <li key={i}>
             <img
               src={img}
               alt='dog'

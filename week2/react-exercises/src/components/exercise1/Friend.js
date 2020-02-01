@@ -12,7 +12,7 @@ export default function Friend() {
     fetch("https://www.randomuser.me/api?results=1")
       .then(resp => resp.json())
       .then(data => {
-        setFriend(data);
+        setFriend(data.results[0]);
         setLoading(false);
       })
       .catch(err => {
@@ -33,7 +33,7 @@ export default function Friend() {
   if (friend) {
     return (
       <div className='friend'>
-        <Button onClick={getFriend} />
+        <Button getFriend={getFriend} />
         <FriendProfile friend={friend} />
       </div>
     );

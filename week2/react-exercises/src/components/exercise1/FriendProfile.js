@@ -5,19 +5,18 @@ export default function FriendProfile({ friend }) {
     <div>
       <ul>
         <li>
-          <span>Name</span> : {friend.results[0].name.first}{" "}
-          {friend.results[0].name.last}
+          <span>Name</span> : {friend.name.first} {friend.name.last}
         </li>
         <li>
-          <span>Address</span> : {friend.results[0].location.street.name}{" "}
-          {friend.results[0].location.street.number}{" "}
-          <span className='country'>{friend.results[0].location.country}</span>
+          <span>Address</span> : {friend.location.street.name}{" "}
+          {friend.location.street.number}{" "}
+          <span className='country'>{friend.location.country}</span>
         </li>
         <li>
-          <span>e-mail</span> : {friend.results[0].email}
+          <span>e-mail</span> : {friend.email}
         </li>
         <li>
-          <span>Phone Number</span> : {friend.results[0].phone}
+          <span>Phone Number</span> : {friend.phone}
         </li>
       </ul>
     </div>
